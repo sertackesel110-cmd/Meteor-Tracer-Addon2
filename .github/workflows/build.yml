@@ -17,11 +17,12 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: 8.10
+          gradle-version: 8.10.2 # Java 21'i destekleyen en güncel sürüm
 
       - name: Build with Gradle
-        # Hata veren chmod ve ./gradlew komutlarını sildik, direkt sistem gradle'ını kullanıyoruz
-        run: gradle build --no-daemon --stacktrace
+        run: gradle build --no-daemon
+        env:
+          JAVA_HOME: ${{ env.JAVA_HOME_21_X64 }}
 
       - name: Upload Artifact
         if: success()
