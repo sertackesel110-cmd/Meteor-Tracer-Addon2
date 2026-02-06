@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "tracer-addon",
+  "version": "1.0.0",
+  "name": "Tracer Addon",
+  "description": "Simple Item Tracer",
+  "authors": ["Sertac04"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/tracer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "meteor": [
+      "com.example.addon.AddonTemplate"
+    ]
+  },
+  "mixins": [
+    "template.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "meteor-client": "*"
+  }
+}
+
