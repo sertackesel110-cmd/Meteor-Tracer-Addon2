@@ -48,7 +48,7 @@ public class AddonTemplate extends MeteorAddon {
         );
 
         public UniversalTracer() {
-            super(CATEGORY, "tracer", "Universal item tracer");
+            super(CATEGORY, "tracer", "Eşyaları takip eder.");
         }
 
         @EventHandler
@@ -69,4 +69,3 @@ public class AddonTemplate extends MeteorAddon {
         }
     }
 }
-
