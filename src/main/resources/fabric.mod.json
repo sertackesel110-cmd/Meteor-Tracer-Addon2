@@ -7,7 +7,6 @@
   "authors": ["Sertac04"],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/tracer/icon.png",
   "environment": "*",
   "entrypoints": {
     "meteor": [
@@ -18,9 +17,8 @@
     "template.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.16.9",
+    "fabricloader": ">=0.18.3",
     "minecraft": "~1.21.4",
     "meteor-client": "*"
   }
 }
-
