@@ -16,9 +16,11 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.10
 
       - name: Build with Gradle
-        # gradlew dosyası yoksa bile sistemdeki gradle ile derler
+        # gradlew dosyası olmadan direkt sistem gradle'ını kullanır
         run: gradle build --no-daemon
 
       - name: Upload Artifact
