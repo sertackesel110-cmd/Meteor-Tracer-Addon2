@@ -9,7 +9,6 @@ buildscript {
 }
 
 apply plugin: "net.fabricmc.loom"
-apply plugin: "maven-publish"
 
 version = "1.0.0"
 group = "com.example"
